@@ -34,7 +34,7 @@ public class HOTPGenerator {
             // Chuyển số thành string OTP
             return String.format("%0" + LENGTH_OF_OTP + "d", otp);
         } catch (NoSuchAlgorithmException | InvalidKeyException e) {
-            e.printStackTrace();
+            System.out.println(e);
             return null;
         }
     }
